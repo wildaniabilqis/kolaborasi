@@ -1,0 +1,193 @@
+:root {
+  --pink-main: #d63384;
+  --pink-soft: #ffe6f0;
+  --pink-accent: #f3b6cf;
+  --purple-soft: #f2e9ff;
+  --text-dark: #444;
+  --text-light: #777;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, var(--pink-soft), var(--purple-soft));
+  color: var(--text-dark);
+}
+
+/* ================= HEADER ================= */
+header {
+  background: linear-gradient(135deg, #ffffff, var(--pink-soft));
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  box-shadow: 0 10px 30px rgba(214,51,132,0.15);
+}
+
+/* FOTO PROFIL TIMBUL */
+header img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+
+  border: 6px solid var(--white);
+  box-shadow:
+    0 8px 25px rgba(214,51,132,0.35),
+    inset 0 0 0 4px var(--pink-accent);
+
+  transition: all 0.4s ease;
+}
+
+header img:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow:
+    0 15px 40px rgba(214,51,132,0.45);
+}
+
+/* NAMA TIMBUL GRADIENT */
+header h1 {
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  background: linear-gradient(135deg, #ec4899, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 2px 4px rgba(255,255,255,0.8),
+    0 6px 15px rgba(214,51,132,0.35);
+}
+
+
+header {
+  backdrop-filter: blur(8px);
+}
+
+header p {
+  margin-top: 10px;
+  font-size: 16px;
+  color: var(--text-light);
+}
+
+/* ================= SECTION ================= */
+section {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: var(--white);
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 24px;
+  box-shadow: 0 15px 35px rgba(214,51,132,0.12);
+  border-left: 6px solid var(--pink-accent);
+  transition: all 0.35s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px rgba(214,51,132,0.25);
+  border-left-color: #c2185b;
+}
+
+.card h2 {
+  color: var(--pink-main);
+  margin-bottom: 15px;
+  font-size: 24px;
+}
+
+.about p {
+  line-height: 1.8;
+  color: #555;
+}
+
+/* ================= SKILLS ================= */
+.skills ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+  list-style: none;
+}
+
+.skills li {
+  background: linear-gradient(135deg, var(--pink-soft), #fff);
+  padding: 12px;
+  text-align: center;
+  border-radius: 16px;
+  color: var(--pink-main);
+  font-weight: 500;
+  box-shadow: 0 6px 15px rgba(214,51,132,0.15);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.skills li:hover {
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(214,51,132,0.25);
+}
+
+/* ================= PROJECTS ================= */
+.projects .project {
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 16px;
+  background: #fff5fa;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.projects .project:hover {
+  transform: translateY(-8px);
+  background: #ffe0ed;
+  box-shadow: 0 18px 35px rgba(214,51,132,0.22);
+}
+
+.projects h3 {
+  color: #c2185b;
+  margin-bottom: 8px;
+}
+
+.projects p {
+  color: #666;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  text-align: center;
+  padding: 30px 20px;
+  background: linear-gradient(135deg, #ffffff, var(--pink-soft));
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  color: #999;
+}
+
+footer a {
+  color: var(--pink-main);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+footer a:hover {
+  color: #ad1457;
+  text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 26px;
+  }
+}
