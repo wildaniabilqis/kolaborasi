@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font modern */
+    scroll-behavior: smooth; /* Gerakan scroll halus */
+}
+
+body {
+    background-color: #f8fbff; /* Latar belakang putih kebiruan */
+    color: #333d4d; /* Warna teks abu tua (enak di mata) */
+}
+
+/* --- 2. NAVIGASI (MENU ATAS) --- */
+nav {
+    background: rgba(255, 255, 255, 0.95); /* Putih agak transparan */
+    padding: 1.5rem 5%; /* Jarak lega */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky; /* Nempel di atas pas discroll */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05); /* Bayangan tipis mewah */
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #2563eb; /* Biru terang */
+    letter-spacing: -1px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #64748b;
+    margin-left: 30px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #2563eb; /* Jadi biru pas disentuh */
+}
+
+/* --- 3. HERO SECTION (BAGIAN HALO) --- */
+.hero {
+    text-align: center;
+    padding: 120px 20px;
+    /* Latar belakang gradasi biru keren */
+    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+}
+
+.hero h1 {
+    font-size: 3rem; /* Tulisan besar */
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero span {
+    /* Teks nama dikasih warna biru spesial */
+    color: #2563eb;
+    text-decoration: underline;
+    text-decoration-color: #93c5fd; /* Garis bawah biru muda */
+}
+
+.hero p {
+    font-size: 1.1rem;
+    color: #475569;
+    margin-bottom: 30px;
+}
+
+/* Tombol Keren */
+.tombol {
+    display: inline-block;
+    padding: 15px 40px;
+    /* Warna tombol gradasi */
+    background: linear-gradient(to right, #2563eb, #3b82f6);
+    color: white;
+    text-decoration: none;
+    border-radius: 50px; /* Bulat lonjong */
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(37, 99, 235, 0.3); /* Bayangan biru bercahaya */
+    transition: transform 0.3s ease;
+}
+
+.tombol:hover {
+    transform: translateY(-3px); /* Naik dikit pas disentuh */
+    box-shadow: 0 15px 25px rgba(37, 99, 235, 0.4);
+}
+
+/* --- 4. PROJECT (GRID KARTU) --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 80px 20px;
+}
+
+.judul-bagian {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: #1e293b;
+    position: relative;
+}
+
+/* Garis kecil di bawah judul */
+.judul-bagian::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #2563eb;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.grid-project {
+    display: grid;
+    /* Rumus otomatis: menyesuaikan lebar layar */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.kartu {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid #e2e8f0; /* Garis pinggir tipis */
+    transition: all 0.3s ease;
+}
+
+.kartu:hover {
+    border-color: #2563eb; /* Garis jadi biru pas dihover */
+    transform: translateY(-10px); /* Kartu naik ke atas */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08); /* Bayangan lembut */
+}
+
+.kartu h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #1e293b;
+}
+
+.kartu p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.link-detail {
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.link-detail:hover {
+    text-decoration: underline;
+}
+
+/* --- 5. FOOTER --- */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: #1e293b; /* Biru Gelap Malam */
+    color: #94a3b8;
+    margin-top: 60px;
+}
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
